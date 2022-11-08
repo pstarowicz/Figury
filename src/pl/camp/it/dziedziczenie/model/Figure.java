@@ -1,3 +1,5 @@
+package pl.camp.it.dziedziczenie.model;
+
 import java.util.Arrays;
 
 public abstract class Figure {

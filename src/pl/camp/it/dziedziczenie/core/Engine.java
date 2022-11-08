@@ -1,3 +1,8 @@
+package pl.camp.it.dziedziczenie.core;
+
+import pl.camp.it.dziedziczenie.database.FigureDB;
+import pl.camp.it.dziedziczenie.gui.GUI;
+
 import java.util.Scanner;
 
 public class Engine {

@@ -1,3 +1,5 @@
+package pl.camp.it.dziedziczenie.model;
+
 public class Circle extends Figure{
 
     public Circle(int[] sides) {

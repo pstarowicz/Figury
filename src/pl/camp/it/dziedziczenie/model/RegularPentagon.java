@@ -1,3 +1,5 @@
+package pl.camp.it.dziedziczenie.model;
+
 public class RegularPentagon extends Pentagon{
 
     public RegularPentagon(int numOfSides, int[] sides) {

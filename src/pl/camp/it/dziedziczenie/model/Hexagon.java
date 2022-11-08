@@ -1,3 +1,5 @@
+package pl.camp.it.dziedziczenie.model;
+
 public class Hexagon extends Figure{
 
     public Hexagon(int numOfSides, int[] sides) {

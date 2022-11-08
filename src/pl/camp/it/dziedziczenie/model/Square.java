@@ -1,3 +1,5 @@
+package pl.camp.it.dziedziczenie.model;
+
 public class Square extends Quadrangle{
 
     public Square(int numOfSides, int[] sides) {

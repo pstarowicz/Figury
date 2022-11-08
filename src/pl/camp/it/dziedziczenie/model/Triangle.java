@@ -1,3 +1,5 @@
+package pl.camp.it.dziedziczenie.model;
+
 public class Triangle extends Figure{
 
     private Kind kind;

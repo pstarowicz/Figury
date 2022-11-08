@@ -1,3 +1,8 @@
+package pl.camp.it.dziedziczenie.gui;
+
+import pl.camp.it.dziedziczenie.database.FigureDB;
+import pl.camp.it.dziedziczenie.model.*;
+
 import java.util.Scanner;
 
 public class GUI {

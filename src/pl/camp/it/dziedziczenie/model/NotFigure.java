@@ -1,3 +1,5 @@
+package pl.camp.it.dziedziczenie.model;
+
 public class NotFigure extends Figure{
 
     public NotFigure(int numOfSides, int[] sides) {

@@ -1,3 +1,7 @@
+package pl.camp.it.dziedziczenie.database;
+
+import pl.camp.it.dziedziczenie.model.Figure;
+
 public class FigureDB {
     private Figure[] figures = new Figure[0];
 

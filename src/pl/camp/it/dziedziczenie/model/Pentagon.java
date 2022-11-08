@@ -1,3 +1,5 @@
+package pl.camp.it.dziedziczenie.model;
+
 public class Pentagon extends Figure{
 
     public Pentagon(int numOfSides, int[] sides) {

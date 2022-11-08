@@ -1,3 +1,5 @@
+package pl.camp.it.dziedziczenie.model;
+
 public class Rectangle extends Quadrangle{
 
     public Rectangle(int numOfSides, int[] sides) {

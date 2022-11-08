@@ -1,3 +1,5 @@
+package pl.camp.it.dziedziczenie.model;
+
 public class RegularHexagon extends Hexagon{
     public RegularHexagon(int numOfSides, int[] sides) {
         super(numOfSides, sides);
