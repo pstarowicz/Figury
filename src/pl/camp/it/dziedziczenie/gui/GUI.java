@@ -62,7 +62,7 @@ public class GUI {
             int b6=sides[5];
             switch(countOfSides){
                 case 1:
-                    figureDB.addFigure(new Circle(sides));
+                    figureDB.addFigure(new Circle(countOfSides,sides));
                     break;
                 case 3:
                     if(checkIfRegular(sides,countOfSides)){

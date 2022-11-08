@@ -6,27 +6,9 @@ public abstract class Figure {
     private int numOfSides;
     private int[] sides = new int[6];
 
-    private double a;
-    private double b;
-    private double c;
-    private double d;
-    private double e;
-    private double f;
-
     public Figure(int numOfSides, int[] sides) {
         this.numOfSides = numOfSides;
         this.sides = sides;
-        this.a=sides[0];
-        this.b=sides[1];
-        this.c=sides[2];
-        this.d=sides[3];
-        this.e=sides[4];
-        this.f=sides[5];
-    }
-
-    public Figure(int[] sides) {
-        this.sides = sides;
-        this.a=sides[0];
     }
 
     public abstract double field();
@@ -78,51 +60,4 @@ public abstract class Figure {
         this.sides = sides;
     }
 
-    public double getA() {
-        return a;
-    }
-
-    public void setA(double a) {
-        this.a = a;
-    }
-
-    public double getB() {
-        return b;
-    }
-
-    public void setB(double b) {
-        this.b = b;
-    }
-
-    public double getC() {
-        return c;
-    }
-
-    public void setC(double c) {
-        this.c = c;
-    }
-
-    public double getD() {
-        return d;
-    }
-
-    public void setD(double d) {
-        this.d = d;
-    }
-
-    public double getE() {
-        return e;
-    }
-
-    public void setE(double e) {
-        this.e = e;
-    }
-
-    public double getF() {
-        return f;
-    }
-
-    public void setF(double f) {
-        this.f = f;
-    }
 }
