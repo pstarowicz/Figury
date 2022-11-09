@@ -7,7 +7,7 @@ public class Quadrangle extends Figure {
     }
 
     @Override
-    public double field() {
+    public double countField() {
         return 0.0;
     }
 

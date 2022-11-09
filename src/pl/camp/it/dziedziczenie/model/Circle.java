@@ -7,15 +7,16 @@ public class Circle extends Figure{
     public Circle(int numOfSides, int[] sides) {
         super(numOfSides, sides);
         this.r=sides[0];
+        this.setField(countField());
     }
 
     @Override
-    public double field() {
+    public double countField() {
         return (Math.PI)*r*r;
     }
 
     @Override
-    public double perimeter() {
+    public double countPerimeter() {
         return 2.0*(Math.PI)*r;
     }
 
@@ -23,9 +24,9 @@ public class Circle extends Figure{
     public String toString() {
         return new StringBuilder().append("Koło o promieniu: ")
                 .append(r).append(" - obwód= ")
-                .append(perimeter())
+                .append(countPerimeter())
                 .append(" - pole=")
-                .append(field())
+                .append(countField())
                 .toString();
     }
 

@@ -6,9 +6,10 @@ public class RegularHexagon extends Hexagon{
     public RegularHexagon(int numOfSides, int[] sides) {
         super(numOfSides, sides);
         this.a=sides[0];
+        this.setField(countField());
     }
     @Override
-    public double field() {
+    public double countField() {
         return 3.0*a*a*Math.sqrt(3)/2.0;
     }
 

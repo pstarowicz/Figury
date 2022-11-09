@@ -6,7 +6,13 @@ public class NotFigure extends Figure{
         super(numOfSides, sides);
     }
 
-    public double field(){
+    @Override
+    public double countPerimeter() {
+        return 0.0;
+    }
+
+    @Override
+    public double countField(){
         return 0.0;
     }
 

@@ -7,10 +7,11 @@ public class RegularPentagon extends Pentagon{
     public RegularPentagon(int numOfSides, int[] sides) {
         super(numOfSides, sides);
         this.a=sides[0];
+        this.setField(countField());
     }
 
     @Override
-    public double field() {
+    public double countField() {
         return (a*a/4.0)*(Math.sqrt(25.0+10.0*Math.sqrt(5)));
     }
 

@@ -1,19 +1,25 @@
 package pl.camp.it.dziedziczenie.model;
 
-import java.util.Arrays;
-
 public abstract class Figure {
     private int numOfSides;
-    private int[] sides = new int[6];
+    private int[] sides;
+    private double perimeter;
+    private double field;
 
     public Figure(int numOfSides, int[] sides) {
+        this(sides);
         this.numOfSides = numOfSides;
         this.sides = sides;
+        this.perimeter= countPerimeter();
     }
 
-    public abstract double field();
+    public Figure(int[] sides) {
 
-    public double perimeter(){
+    }
+
+    public abstract double countField();
+
+    public double countPerimeter(){
         int per=0;
         for(int i=0; i<numOfSides; i++){
             per+=sides[i];
@@ -33,14 +39,14 @@ public abstract class Figure {
         return new StringBuilder().append(" - boki: ")
                 .append(showSides())
                 .append("- obwód= ")
-                .append(perimeter())
+                .append(this.perimeter)
                 .toString();
     }
 
     public String resultWithField(){
         return new StringBuilder().append(resultWithoutField())
                 .append(" - pole= ")
-                .append(field())
+                .append(this.field)
                 .toString();
     }
 
@@ -60,4 +66,19 @@ public abstract class Figure {
         this.sides = sides;
     }
 
+    public double getPerimeter() {
+        return perimeter;
+    }
+
+    public void setPerimeter(double perimeter) {
+        this.perimeter = perimeter;
+    }
+
+    public double getField() {
+        return field;
+    }
+
+    public void setField(double field) {
+        this.field = field;
+    }
 }

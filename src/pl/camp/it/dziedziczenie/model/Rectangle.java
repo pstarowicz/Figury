@@ -9,10 +9,11 @@ public class Rectangle extends Quadrangle{
         super(numOfSides, sides);
         this.a=sides[0];
         this.b=sides[1];
+        this.setField(countField());
     }
 
     @Override
-    public double field() {
+    public double countField() {
         return a*b;
     }
 

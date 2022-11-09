@@ -7,10 +7,11 @@ public class Square extends Quadrangle{
     public Square(int numOfSides, int[] sides) {
         super(numOfSides, sides);
         this.a=sides[0];
+        this.setField(countField());
     }
 
     @Override
-    public double field() {
+    public double countField() {
         return a*a;
     }
 

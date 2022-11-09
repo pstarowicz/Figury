@@ -13,10 +13,11 @@ public class Triangle extends Figure{
         this.a=sides[0];
         this.b=sides[1];
         this.c=sides[2];
+        this.setField(countField());
     }
 
     @Override
-    public double field() {
+    public double countField() {
         double p=(a+b+c)/2.0;
         return Math.sqrt(p*(p-a)*(p-b)*(p-c));
     }
