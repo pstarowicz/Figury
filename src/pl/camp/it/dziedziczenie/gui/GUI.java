@@ -3,28 +3,29 @@ package pl.camp.it.dziedziczenie.gui;
 import pl.camp.it.dziedziczenie.database.FigureDB;
 import pl.camp.it.dziedziczenie.model.*;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class GUI {
+    public static final BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     public static void showMenu(){
         System.out.println();
         System.out.println("1. Wczytaj boki");
         System.out.println("2. Wyjdź");
     }
 
-    public static FigureDB createFigures(){
-        Scanner scanner = new Scanner(System.in);
+    public static FigureDB createFigures() throws IOException {
         FigureDB figureDB = new FigureDB();
         System.out.println("Podaj liczbę zestawów do wpisania:");
-        int liczFigur=Integer.parseInt(scanner.nextLine());
+        int liczFigur=Integer.parseInt(reader.readLine());
         if(liczFigur<=0){
             System.out.println("Podano niedodatnią liczbę");
             return null;
         }
         System.out.println("Podaj długości (1 lub 3-6 wymiary):");
         for(int j=0; j<liczFigur; j++) {
-            String a = scanner.nextLine();
-            String[] nums = a.split(" ");
+            String[] nums = reader.readLine().split(" ");
             if (nums.length > 6) {
                 System.out.println("Podano za dużą liczbę boków!");
                 return null;

@@ -3,17 +3,17 @@ package pl.camp.it.dziedziczenie.core;
 import pl.camp.it.dziedziczenie.database.FigureDB;
 import pl.camp.it.dziedziczenie.gui.GUI;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Engine {
-    public static void start(){
-        Scanner scanner = new Scanner(System.in);
+    public static void start() throws IOException {
         FigureDB figureDB;
         boolean isWorking = true;
 
         while(isWorking){
             GUI.showMenu();
-            switch(scanner.nextLine()){
+            switch(GUI.reader.readLine()){
                 case "1":
                     figureDB=GUI.createFigures();
                     if(figureDB!=null) {
