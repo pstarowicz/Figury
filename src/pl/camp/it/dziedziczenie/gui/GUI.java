@@ -58,8 +58,6 @@ public class GUI {
             int b2=sides[1];
             int b3=sides[2];
             int b4=sides[3];
-            int b5=sides[4];
-            int b6=sides[5];
             switch(countOfSides){
                 case 1:
                     figureDB.addFigure(new Circle(countOfSides,sides));
